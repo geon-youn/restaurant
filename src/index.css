@@ -1,0 +1,68 @@
+:root {
+    --maroon: #850044;
+    --yellow: #f3c761;
+    background-color: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.context-switch-buttons {
+    display: flex;
+}
+
+.context-switch-buttons button {
+    appearance: none;
+    flex: 1;
+    height: 5rem;
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    color: rgb(82, 82, 82);
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+
+.context-switch-buttons .active {
+    background-color: var(--maroon);
+    color: white;
+}
+
+div.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    border-bottom: 0.5rem solid var(--yellow);
+}
+
+.header > div {
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.header > div > h1 {
+    font-weight: normal;
+    font-size: 2.3rem;
+}
+
+.header > div > h2 {
+    color: var(--maroon);
+    font-weight: 500;
+}
+
+.header > img {
+    position: absolute;
+    height: 7rem;
+    top: 1.5rem;
+    left: 5rem;
+}
